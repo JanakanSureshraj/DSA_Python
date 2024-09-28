@@ -1,0 +1,65 @@
+Big O notation is a way of describing how the running time or memory usage of an algorithm grows as the input size (usually called n) increases. 
+It helps us figure out which solutions are more efficient when dealing with lots of data.
+
+Imagine this...
+Let’s say you have a toy box with:
+
+5 toys – sorting these might take just a few seconds.
+50 toys – it will take longer, but how much longer?
+500 toys – it will take even longer, and some ways of sorting will be slower than others.
+Big O notation helps us describe these patterns in a simple way.
+
+Different Time Complexities Explained:
+1. O(1) – Constant Time
+Think of it like reaching into your toy box and grabbing a specific toy without looking. No matter how many toys are in the box, it always takes the same amount of time.
+
+Example: Finding the first toy in the box.
+No increase in time if you add more toys.
+Imagine you are looking for your favorite action figure that is always on top of your toy box.
+
+2. O(n) – Linear Time
+Suppose you want to count all your toys, one by one. If you have 10 toys, it takes 10 seconds. If you have 100 toys, it takes 100 seconds. The time grows directly with the number of toys.
+
+Example: Checking if each toy is a car.
+If you add more toys, it will take more time.
+Imagine lining up your toys and counting each one.
+
+3. O(n²) – Quadratic Time
+Imagine you want to compare each toy with every other toy. For 10 toys, you need to make 100 comparisons! For 20 toys, 400 comparisons! The time grows much faster as the number of toys increases.
+
+Example: Comparing every toy with every other toy to see which ones are duplicates.
+Adding more toys will make it way slower.
+Imagine doing a "high-five" with each toy in a line — the time blows up really quickly.
+
+4. O(log n) – Logarithmic Time
+Let’s say your toys are already sorted. If you want to find a specific toy, you can skip a lot of the toys instead of going through each one. For example, start in the middle and decide if your toy is in the left half or the right half. Then repeat!
+
+Example: Guessing a number between 1 and 100 by halving the range every time.
+Each time you look, you cut down your search by half.
+Imagine finding a word in a dictionary by starting in the middle and skipping half the words each time.
+
+5. O(n log n) – Linearithmic Time
+Imagine you are sorting your toys by size or color. Each time you sort a few toys, you repeat the process several times until all are sorted. It’s like combining linear time with logarithmic time.
+
+Example: A smart sorting algorithm, like Merge Sort.
+It’s faster than O(n²), but slower than O(n).
+Imagine you’re sorting blocks by height by first sorting small groups, then combining them.
+
+6. O(2ⁿ) – Exponential Time
+This means the time doubles with each new toy. If you have 10 toys, it takes 2¹⁰ (1024) steps; if you have 20 toys, it takes 2²⁰ (over a million!) steps. This is extremely slow!
+
+Example: Solving a puzzle by trying every possible arrangement.
+Adding just a few more toys makes it extremely slow.
+Imagine trying out every combination of 20 puzzle pieces until you find the right one.
+
+7. O(n!) – Factorial Time
+This is the worst-case scenario. If you have 10 toys, you try all 10! arrangements (3,628,800 different ways). You probably wouldn’t want to use an algorithm like this unless you have very few items.
+
+Example: Trying to arrange all your toys in every possible order.
+Adding more toys makes it impossible to finish quickly.
+Imagine lining up your toys in every single order to find the one you like most.
+
+-----------------------------------------------------------------------------------
+Big O is like a growth meter.
+It tells us how much longer a task will take if we add more data.
+Different time complexities tell us how quickly things get out of hand.
