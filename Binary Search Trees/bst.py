@@ -1,9 +1,9 @@
-class Node:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-        self.right = None
-
-class BinarySearchTree:
+class BST:
+    class Node:
+     def __init__(self, key):
+         self.key = key
+         self.left = None
+         self.right = None
+         
     def __init__(self):
         self.root = None

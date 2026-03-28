@@ -1,4 +1,4 @@
-from bst import Node, BinarySearchTree
+from bst import BST
 
 def insert(self, data, subtree):
     if subtree is None: 
@@ -9,7 +9,7 @@ def insert(self, data, subtree):
     elif data > subtree.data:
         subtree.right = self.insert(data, subtree.right) # insert in the right subtree
         return subtree
-    
-def insert_recursivese(self, data):
+
+def insert_recursive(self, data):
     self.root = self.insert(data, self.root) # start the insertion from the root
     
